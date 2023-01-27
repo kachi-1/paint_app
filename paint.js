@@ -1,5 +1,5 @@
 function setup() {
-    createCanvas(400, 400);
+    createCanvas(700, 700);
 }
 
 let onPalette = 0;  //flag for palette selected
@@ -82,7 +82,7 @@ function mousePressed() {
             push();
             stroke(c);
             strokeWeight(15);
-            line(x, y, x+1, y+1);
+            line(x, y, x, y);
             pop();
         }else console.log('no palette');
     }
